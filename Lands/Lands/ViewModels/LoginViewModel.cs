@@ -3,74 +3,52 @@
     using System.ComponentModel;
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
-    using Xamarin.Forms;
     using Lands.Views;
+    using Xamarin.Forms;
 
-    public class LoginViewModel : INotifyPropertyChanged
+    public class LoginViewModel : BaseViewModel
     {
 
         #region events
-        public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 
         #region Properties
+
         private string email;
         public string Email
         {
-            get
-            {
-                return email;
-            }
-            set
-            {
-                if (email != value)
-                {
-                    email = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Email"));
-
-                }
-            }
+            get {return email; }
+            set {  SetValue(ref email, value);  }
         }
 
         private string password;
         public string Password
         {
-            get
-            {
-                return password;
-            }
-            set
-            {
-                if (password != value)
-                {
-                    password = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Password"));
-                }
-            }
+            get { return password;  }
+            set {  SetValue(ref password, value);  }
         }
 
-        public bool isRunning;
+        private bool isRunning;
         public bool IsRunning
         {
-            get
-            {
-                return isRunning;
-            }
-            set
-            {
-                if(isRunning != value)
-                {
-                    IsRunning = value;
-                    PropertyChanged?.Invoke(this,new PropertyChangedEventArgs("IsRunning"));
-                }
-            }
+            get {return isRunning;  }
+            set {SetValue(ref isRunning, value);}
         }
 
+        private bool isRemembered;
         public bool IsRemembered
         {
-            get;
-            set;
+            get { return isRemembered; }
+            set { SetValue(ref isRemembered, value);}
         }
+
+        private bool isEnabled;
+        public bool IsEnabled
+        {
+            get { return isEnabled; }
+            set { SetValue(ref isEnabled, value); }
+        }
+
         #endregion
 
         #region Commands
@@ -109,6 +87,15 @@
                 return new RelayCommand(Login);
             }
         }
+        #endregion
+
+        #region Constructor
+        public LoginViewModel()
+        {
+            IsRemembered = false;
+            IsEnabled = true;
+        }
+
         #endregion
     }
 }
