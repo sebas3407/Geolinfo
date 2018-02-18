@@ -69,12 +69,13 @@
 
             if (Email == "sebas" && Password == "1234")
             {
-                await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
+                Email = string.Empty;
+                Password = string.Empty;
+                await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
             }
 
             else
             {
-                Email = string.Empty;
                 Password = string.Empty;
                 await Application.Current.MainPage.DisplayAlert("Error", "Email or password invalid", "Ok");
             }
