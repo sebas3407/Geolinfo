@@ -71,6 +71,8 @@
             {
                 Email = string.Empty;
                 Password = string.Empty;
+
+                MainViewModel.GetInstance().Lands = new LandsViewModel();
                 await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
             }
 
@@ -95,6 +97,13 @@
         {
             IsRemembered = false;
             IsEnabled = true;
+
+            Email = "sebas";
+            Password = "1234";
+
+
+            //http://restcountries.eu/rest/v2/all
+
         }
 
         #endregion
