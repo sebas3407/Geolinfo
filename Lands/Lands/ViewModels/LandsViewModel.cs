@@ -43,7 +43,6 @@ namespace Lands.ViewModels
             }
         }
 
-        List<Land> landsList; 
 
         #endregion
 
@@ -105,7 +104,7 @@ namespace Lands.ViewModels
                 await Application.Current.MainPage.Navigation.PopAsync();
                 return;
             }
-            landsList = (List<Land>)response.Result;
+            MainViewModel.GetInstance().LandsList = (List<Land>)response.Result;
             Lands = new ObservableCollection<LandItemViewModel>(ToLandItemViewModel());
             IsRefreshing = false;
         }
@@ -113,7 +112,7 @@ namespace Lands.ViewModels
         private IEnumerable<LandItemViewModel> ToLandItemViewModel()
         {
 
-            return this.landsList.Select(l => new LandItemViewModel
+            return MainViewModel.GetInstance().LandsList.Select(l => new LandItemViewModel
             {
                 Alpha2Code = l.Alpha2Code,
                 Alpha3Code = l.Alpha3Code,
