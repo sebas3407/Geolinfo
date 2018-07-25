@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="Lands.Views.BordersPage"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Lands.Views.BordersPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Icon="ic_action_language"
     Title="Borders">
 
-    <Label
-        Text="Borders"/>
+    <StackLayout BindingContext="{Binding Land}"
+        Padding="5">
 
+        <Label FontSize="Large"
+            FontAttributes="Bold"
+            Text="{Binding Land.Name}"
+            TextColor="Black" />
+
+        <ListView ItemsSource="{Binding Borders}"
+            HasUnevenRows="true">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="{Binding Code}"
+                                TextColor="Black">
+
+                            </Label>
+
+                            <Label Text="{Binding Name}"
+                                TextColor="Black">
+
+                            </Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

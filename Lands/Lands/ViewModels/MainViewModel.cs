@@ -5,9 +5,7 @@ namespace Lands.ViewModels
 {
     public class MainViewModel
     {
-
         #region Properties
-
         public List<Land> LandsList
         {
             get;
@@ -44,7 +42,6 @@ namespace Lands.ViewModels
         #endregion
 
         #region Singleton
-
         private static MainViewModel instance;
 
         public static MainViewModel GetInstance()
@@ -56,7 +53,6 @@ namespace Lands.ViewModels
 
             return instance;
         }
-
         #endregion  
     }
 }

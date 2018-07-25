@@ -111,7 +111,6 @@ namespace Lands.ViewModels
 
         private IEnumerable<LandItemViewModel> ToLandItemViewModel()
         {
-
             return MainViewModel.GetInstance().LandsList.Select(l => new LandItemViewModel
             {
                 Alpha2Code = l.Alpha2Code,

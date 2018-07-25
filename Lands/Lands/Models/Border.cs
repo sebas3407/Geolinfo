@@ -3,7 +3,15 @@ namespace Lands.Models
 {
     public class Border
     {
-        public String Code
+		private string alpha3Code;
+
+		public Border(string alpha3Code, string name)
+		{
+			this.alpha3Code = alpha3Code;
+			Name = name;
+		}
+
+		public String Code
         {
             get;
             set;
