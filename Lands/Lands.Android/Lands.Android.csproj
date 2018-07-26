@@ -76,6 +76,12 @@
     <AndroidResource Include="Resources\drawable\ic_action_monetization_on.png" />
     <AndroidResource Include="Resources\drawable\ic_action_people.png" />
     <AndroidResource Include="Resources\drawable\ic_action_translate.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\forward.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\forward.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\forward.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
