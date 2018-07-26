@@ -3,27 +3,28 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Lands.Views.LandsPage"
+    BackgroundImage="background.png"
     BindingContext="{Binding Main, Source={StaticResource Locator}}" 
     Title="Lands">
 
     <StackLayout
         BindingContext="{Binding Lands}">
         <SearchBar
-                BackgroundColor="Silver"
+                BackgroundColor="Transparent"
                 HeightRequest="46"
                 Text="{Binding Filter, Mode=TwoWay}"
                 Placeholder="Search"
                 SearchCommand="{Binding SearchCommand}">
         </SearchBar>
         <ListView 
-                BackgroundColor="Silver"
+                BackgroundColor="Transparent"
                 HasUnevenRows="true" 
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
                 ItemsSource="{Binding Lands}"
                 SeparatorVisibility="None"
                 RefreshCommand="{Binding RefreshCommand}">
-                <ListView.ItemTemplate>
+             <!--   <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Frame
@@ -61,7 +62,79 @@
                             </Frame>
                         </ViewCell>
                     </DataTemplate>
-                </ListView.ItemTemplate>
+                </ListView.ItemTemplate>-->
+
+               <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    
+                    <ViewCell>
+
+                        <StackLayout VerticalOptions="Fill"
+                            HorizontalOptions="FillAndExpand"
+                            Padding="0,15,0,0">
+
+                            <!-- NEW BOARDS -->
+                            <StackLayout x:Name="newBoardsStack"
+                                VerticalOptions="FillAndExpand">
+
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SelectLandCommand}"/>
+                                </StackLayout.GestureRecognizers>
+
+                                <!-- THIS IS WHERE THE NEW BOARDS ARE ADDED -->
+                                <StackLayout x:name="boardLayout2"
+                                    Padding="10,15"
+                                    Orientation="Vertical">
+                                    
+                                    <Label x:Name="boardNameLabel2"
+                                        HorizontalOptions="StartAndExpand"
+                                        Text="{Binding Name}"
+                                        TextColor="White"
+                                        VerticalTextAlignment="Center" />
+
+                                    <StackLayout x:Name="infoLayout2"
+                                        Orientation="Horizontal"
+                                        HorizontalOptions="End"
+                                        Margin="0,-15,0,0">
+
+                                        <Label Text="{Binding BoardMembers}"
+                                            HorizontalOptions="End"
+                                            TextColor="Green"
+                                            FontSize="10"
+                                            VerticalTextAlignment="Start"
+                                            HorizontalTextAlignment="End"
+                                            Margin="0,0,-5,0" />
+
+                                        <Image Source="profile_icon.png"
+                                            HorizontalOptions="End"
+                                            Margin="0,0,20,0" />
+
+                                        <Image Source="forward.png"
+                                            HorizontalOptions="End" />
+
+                                    </StackLayout>
+
+                                    <Label Text="{Binding Capital}"
+                                        TextColor="#839199"
+                                        HorizontalOptions="StartAndExpand"
+                                        FontSize="12"
+                                        VerticalTextAlignment="Center"
+                                        Margin="0,-10,0,0" />
+
+                                </StackLayout>
+
+                                <BoxView x:Name="separator2"
+                                    HeightRequest="1"
+                                    Color="White"
+                                    Opacity="0.20"
+                                    Margin="0,10,0,0" />
+
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
             </ListView>        
     </StackLayout>
 </ContentPage>
