@@ -14,17 +14,33 @@ namespace Lands.ViewModels
 			set { SetValue(ref borders, value); }
 		}
 
+
+		private ObservableCollection<Currency> currencies;
+		public ObservableCollection<Currency> Currencies
+        {
+			get { return currencies; }
+			set { SetValue(ref currencies, value); }
+		}
+
+		private ObservableCollection<Language> languages;
+		public ObservableCollection<Language> Languages
+        {
+			get { return languages; }
+			set { SetValue(ref languages, value); }
+        }
+
 		public Land Land
 		{
 			get;
 			set;
 		}
 		#endregion
-
+        
 		#region Methods
 		private void LoadBorders()
 		{
-			this.borders = new ObservableCollection<Border>();
+			borders = new ObservableCollection<Border>();
+
 			foreach (var border in Land.Borders)
 			{
 				var land = MainViewModel.GetInstance().LandsList.Where(
@@ -42,6 +58,8 @@ namespace Lands.ViewModels
 		public LandViewModel(Land Land)
 		{
 			this.Land = Land;
+			Currencies = new ObservableCollection<Currency>(Land.Currencies);
+			Languages = new ObservableCollection<Language>(Land.Languages);
 			LoadBorders();
 		}
 		#endregion
