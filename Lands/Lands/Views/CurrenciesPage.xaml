@@ -15,7 +15,8 @@
             TextColor="Black" />
 
         <ListView ItemsSource="{Binding Currencies}"
-            HasUnevenRows="true">
+            HasUnevenRows="true"
+            SeparatorVisibility="None">
 
             <ListView.ItemTemplate>
                 <DataTemplate>

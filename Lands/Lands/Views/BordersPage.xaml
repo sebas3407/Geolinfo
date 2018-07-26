@@ -14,8 +14,10 @@
             Text="{Binding Land.Name}"
             TextColor="Black" />
 
-        <ListView ItemsSource="{Binding Borders}"
-            HasUnevenRows="true">
+        <ListView BackgroundColor="Transparent"
+            ItemsSource="{Binding Borders}"
+            HasUnevenRows="true"
+            SeparatorVisibility="None">
 
             <ListView.ItemTemplate>
                 <DataTemplate>

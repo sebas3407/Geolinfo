@@ -73,7 +73,7 @@
                 Password = string.Empty;
 
                 MainViewModel.GetInstance().Lands = new LandsViewModel();
-                await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
+				await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
             }
 
             else

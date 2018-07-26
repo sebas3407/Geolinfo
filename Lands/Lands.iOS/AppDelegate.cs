@@ -24,7 +24,8 @@ namespace Lands.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+			UITabBar.Appearance.SelectedImageTintColor = UIColor.White;
+            UITabBar.Appearance.BarTintColor = UIColor.FromRGBA(39, 56, 87, 255); 
             return base.FinishedLaunching(app, options);
         }
     }

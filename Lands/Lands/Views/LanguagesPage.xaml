@@ -15,7 +15,8 @@
             TextColor="Black" />
 
         <ListView ItemsSource="{Binding Languages}"
-            HasUnevenRows="true">
+            HasUnevenRows="true"
+            SeparatorVisibility="None">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
