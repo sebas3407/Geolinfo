@@ -8,8 +8,7 @@
 		public App ()
 		{
 			InitializeComponent();
-
-			this.MainPage = new NavigationPage(new LoginPage());
+			MainPage = new NavigationPage(new LoginPage());
 		}
 
 		protected override void OnStart ()

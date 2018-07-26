@@ -10,6 +10,13 @@ namespace Lands.Views
         public LandsPage()
         {
             InitializeComponent();
+			NavigationPage.SetHasNavigationBar(this, true);
+			Application.Current.MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.FromHex("#234B5A"));
+        }
+
+		protected override void OnAppearing()
+        {
+            base.OnAppearing();
         }
     }
 }
