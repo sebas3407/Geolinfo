@@ -140,4 +140,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\twitter_logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\Contents.json" />
+  </ItemGroup>
 </Project>
