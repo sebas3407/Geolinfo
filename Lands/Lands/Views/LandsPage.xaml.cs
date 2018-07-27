@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Lands.Views
 {
-    public partial class LandsPage : ContentPage
+	public partial class LandsPage : ContentPage
     {
         public LandsPage()
         {
@@ -17,7 +14,7 @@ namespace Lands.Views
 			if (Device.RuntimePlatform == Device.Android)
 			{
 				SearchBar.BackgroundColor = Color.White;
-				SearchBar.Margin = new Thickness(10,0,10,0);
+				SearchBar.Margin = new Thickness(10,0);
 			}
 		}
 
