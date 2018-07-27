@@ -34,5 +34,9 @@
 	<string>Lands</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon-13.appiconset</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false/>
+		<key>UIStatusBarStyle</key>
+		<string>UIStatusBarStyleBlackOpaque</string>
 </dict>
 </plist>
