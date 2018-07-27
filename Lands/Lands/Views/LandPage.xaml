@@ -10,19 +10,21 @@
         BindingContext="{Binding Land}">
 
         <StackLayout
-            Padding="5">
+            Padding="30,30,0,0">
+            
             <Label
                 FontSize="Large"
                 FontAttributes="Bold"
                 Text="{Binding Land.Name}"
                 TextColor="Black"/>
 
-
-                <Grid>
+                <Grid Margin="0,20,0,0">
+                
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                     </Grid.ColumnDefinitions>
+               
                     <Label
                         Grid.Column="0"
                         Grid.Row="0"
