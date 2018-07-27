@@ -13,6 +13,12 @@ namespace Lands.Views
 			NavigationPage.SetHasNavigationBar(this, true);
 			Application.Current.MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.FromHex("#234B5A"));
 			Application.Current.MainPage.SetValue(NavigationPage.BarTextColorProperty, Color.White);
+
+			if (Device.RuntimePlatform == Device.Android)
+			{
+				SearchBar.BackgroundColor = Color.White;
+				SearchBar.Margin = new Thickness(10,0,10,0);
+			}
 		}
 
 		protected override void OnAppearing()
