@@ -97,10 +97,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\ic_chevron_right.png" />
-    <BundleResource Include="Resources\ic_action_info.png" />
     <BundleResource Include="Resources\ic_action_language.png" />
-    <BundleResource Include="Resources\ic_action_monetization_on.png" />
-    <BundleResource Include="Resources\ic_action_people.png" />
     <BundleResource Include="Resources\ic_action_translate.png" />
     <BundleResource Include="Resources\background.png" />
     <BundleResource Include="Resources\background%402x.png" />
@@ -108,6 +105,19 @@
     <BundleResource Include="Resources\forward%401x.png" />
     <BundleResource Include="Resources\forward%402x.png" />
     <BundleResource Include="Resources\forward%403x.png" />
+    <BundleResource Include="Resources\ic_action_translate%402x.png" />
+    <BundleResource Include="Resources\ic_action_translate%403x.png" />
+    <BundleResource Include="Resources\ic_action_money.png" />
+    <BundleResource Include="Resources\ic_action_money%402x.png" />
+    <BundleResource Include="Resources\ic_action_money%403x.png" />
+    <BundleResource Include="Resources\ic_action_border.png" />
+    <BundleResource Include="Resources\ic_action_border%402x.png" />
+    <BundleResource Include="Resources\ic_action_border%403x.png" />
+    <BundleResource Include="Resources\ic_action_language%402x.png" />
+    <BundleResource Include="Resources\ic_action_language%403x.png" />
+    <BundleResource Include="Resources\ic_action_info%402x.png" />
+    <BundleResource Include="Resources\ic_action_info%403x.png" />
+    <BundleResource Include="Resources\ic_action_info.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
