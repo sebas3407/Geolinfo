@@ -118,6 +118,7 @@
     <BundleResource Include="Resources\ic_action_info%402x.png" />
     <BundleResource Include="Resources\ic_action_info%403x.png" />
     <BundleResource Include="Resources\ic_action_info.png" />
+    <BundleResource Include="Resources\SplashImage.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -152,5 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage-1.launchimage\Contents.json" />
   </ItemGroup>
 </Project>
