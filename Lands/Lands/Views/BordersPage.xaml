@@ -7,7 +7,7 @@
     Title="Borders">
 
     <StackLayout BindingContext="{Binding Land}"
-        Padding="5">
+        Padding="30,30,0,0">
 
         <Label FontSize="Large"
             FontAttributes="Bold"
@@ -17,6 +17,7 @@
         <ListView BackgroundColor="Transparent"
             ItemsSource="{Binding Borders}"
             HasUnevenRows="true"
+            Margin="0,20,0,0"
             SeparatorVisibility="None">
 
             <ListView.ItemTemplate>

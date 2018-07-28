@@ -28,156 +28,156 @@
                     <Label
                         Grid.Column="0"
                         Grid.Row="0"
+                        FontAttributes="Bold"
                         Text="Capital"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="0"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Capital}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="1"
+                        FontAttributes="Bold"
                         Text="Population"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="1"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Population, StringFormat='{0:N0}'}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="2"
+                        FontAttributes="Bold"
                         Text="Area"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="2"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Area, StringFormat='{0:N0}'}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="3"
+                        FontAttributes="Bold"
                         Text="AlphaCode2"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="3"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Alpha2Code}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="4"
+                        FontAttributes="Bold"
                         Text="AlphaCode3"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="4"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Alpha3Code}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="5"
+                        FontAttributes="Bold"
                         Text="Region"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="5"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Region}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="6"
+                        FontAttributes="Bold"
                         Text="Subregion"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="6"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Subregion}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="7"
+                        FontAttributes="Bold"
                         Text="Demonym"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="7"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Demonym}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="8"
+                        FontAttributes="Bold"
                         Text="GINI"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="8"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Gini, StringFormat='{0:N2}'}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="9"
+                        FontAttributes="Bold"
                         Text="NativeName"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="9"
-                        FontAttributes="Bold"
                         Text="{Binding Land.NativeName}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="10"
+                        FontAttributes="Bold"
                         Text="NumericCode"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="10"
-                        FontAttributes="Bold"
                         Text="{Binding Land.NumericCode}"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="0"
                         Grid.Row="11"
+                        FontAttributes="Bold"
                         Text="CIOC"
                         TextColor="Black">
                     </Label>
                     <Label
                         Grid.Column="1"
                         Grid.Row="11"
-                        FontAttributes="Bold"
                         Text="{Binding Land.Cioc}"
                         TextColor="Black">
                     </Label>
