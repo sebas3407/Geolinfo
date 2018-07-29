@@ -25,13 +25,11 @@
 	<key>CFBundleDisplayName</key>
 	<string>Lands</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Lands</string>
+	<string>com.sebasortizvelez.Geolinfo</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>CFBundleName</key>
-	<string>Lands</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon-13.appiconset</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
@@ -40,5 +38,9 @@
 	<string>UIStatusBarStyleBlackOpaque</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Assets.xcassets/LaunchImage-1.launchimage</string>
+	<key>CFBundleName</key>
+	<string>Geolinfo</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
 </dict>
 </plist>
