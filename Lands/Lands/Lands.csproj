@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <EmbeddedResource Remove="MainPage.xaml" />
+    <EmbeddedResource Remove="Resources\Resource.es.resx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Views\LoginPage.xaml">
@@ -45,5 +46,8 @@
     <Folder Include="Resources\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource.es.resx" />
   </ItemGroup>
 </Project>

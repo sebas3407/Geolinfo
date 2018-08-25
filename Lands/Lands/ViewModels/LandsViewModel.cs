@@ -6,7 +6,6 @@ using GalaSoft.MvvmLight.Command;
 using Lands.Models;
 using Lands.Services;
 using Xamarin.Forms;
-using Lands.Helpers;
 
 namespace Lands.ViewModels
 {
