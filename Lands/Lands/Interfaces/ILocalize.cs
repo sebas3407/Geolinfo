@@ -2,7 +2,7 @@
 {
     using System.Globalization;
 
-    public interface Ilocalize
+    public interface ILocalize
     {
         CultureInfo GetCurrentCultureInfo();
 
