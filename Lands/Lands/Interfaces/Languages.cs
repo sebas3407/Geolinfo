@@ -5,7 +5,7 @@ public static class Languages
 {
     static Languages()
     {
-        var ci = DependencyService.Get<Ilocalize>().GetCurrentCultureInfo();
+        var ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
        
         //SEBAS
         //Resource.Culture = ci;
