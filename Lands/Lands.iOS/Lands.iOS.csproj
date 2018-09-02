@@ -152,18 +152,44 @@
     <BundleResource Include="Resources\twitter_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage-1.launchimage\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-60%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-60%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-76.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-76%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-83.5%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-40%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-40%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-29.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-29%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-40.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage-1.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-60%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-60%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-76%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-83.5%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-40%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-40%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-29%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon-13.appiconset\icon-29%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
 </Project>
