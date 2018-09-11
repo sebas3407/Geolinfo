@@ -2,10 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="Lands.Views.LandPage"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Icon="ic_action_info"
     Title="Land">
 
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <ffimageloadingsvg:SvgImageSourceConverter 
+                x:Key="SvgImageSourceConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+    
 	<ScrollView
         BindingContext="{Binding Land}">
 
@@ -17,6 +27,10 @@
                 FontAttributes="Bold"
                 Text="{Binding Land.Name}"
                 TextColor="Black"/>
+
+              <!-- <ffimageloading:CachedImage 
+                    Source="{Binding Land.Flag, Converter={StaticResource SvgImageSourceConverter}}">
+                </ffimageloading:CachedImage>-->
 
                 <Grid Margin="0,20,0,0">
                 

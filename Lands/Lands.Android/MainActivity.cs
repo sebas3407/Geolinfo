@@ -1,9 +1,11 @@
-﻿using Android.App;
-using Android.Content.PM;
-using Android.OS;
-
+﻿
 namespace Lands.Droid
 {
+    using Android.App;
+    using Android.Content.PM;
+    using Android.OS;
+    using FFImageLoading.Forms.Droid;
+
 	[Activity(Label = "Lands", 
 	          Icon = "@drawable/icon", 
 	          Theme = "@style/MainTheme",
@@ -20,6 +22,7 @@ namespace Lands.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            CachedImageRenderer.Init(true);
             LoadApplication(new App());
         }
     }

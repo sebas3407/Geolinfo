@@ -8,7 +8,7 @@
 		public App ()
 		{
 			InitializeComponent();
-            MainPage = new NavigationPage(new LandsPage());
+            MainPage = new NavigationPage(new LoginPage());
 		}
 
 		protected override void OnStart ()
