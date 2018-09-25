@@ -8,8 +8,8 @@
         {
             InitializeComponent();
 			NavigationPage.SetHasNavigationBar(this, true);
-			Application.Current.MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.FromHex("#234B5A"));
-			Application.Current.MainPage.SetValue(NavigationPage.BarTextColorProperty, Color.White);
+	//		Application.Current.MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.FromHex("#234B5A"));
+		//	Application.Current.MainPage.SetValue(NavigationPage.BarTextColorProperty, Color.White);
 
 			if (Device.RuntimePlatform == Device.Android)
 			{

@@ -37,7 +37,7 @@ namespace Lands.ViewModels
         public MainViewModel()
         {
             instance = this;
-            this.Login = new LoginViewModel();
+            this.Lands = new LandsViewModel();
         }
         #endregion
 
