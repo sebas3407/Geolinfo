@@ -8,10 +8,14 @@
 		public App ()
 		{
 			InitializeComponent();
-            MainPage = new NavigationPage(new LandsPage());
-		}
+            NavigationPage main = new NavigationPage(new LandsPage());
+            main.BarBackgroundColor = Color.FromHex("#234B5A");
+            main.BarTextColor = Color.White;
 
-		protected override void OnStart ()
+            MainPage = main;
+        }
+
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

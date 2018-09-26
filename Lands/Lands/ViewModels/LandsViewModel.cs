@@ -41,12 +41,9 @@ namespace Lands.ViewModels
                 SearchCommand.Execute(null);
             }
         }
-
-
         #endregion
 
         #region Commands
-
         public ICommand RefreshCommand
         {
             get
