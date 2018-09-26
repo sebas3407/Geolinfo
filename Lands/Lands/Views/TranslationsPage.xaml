@@ -3,6 +3,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="Lands.Views.TranslationsPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    xmlns:i18n="clr-namespace:Lands.Helpers"         
     Icon="ic_action_translate"
     Title="Translations">
 
@@ -26,7 +27,7 @@
                     Grid.Column="0"
                     Grid.Row="0"
                     FontAttributes="Bold"
-                    Text="German"
+                    Text="{i18n:Translate German}"
                     TextColor="Black"/>
 
                 <Label
@@ -39,7 +40,7 @@
                     Grid.Column="0"
                     Grid.Row="1"
                     FontAttributes="Bold"
-                    Text="Spanish"
+                    Text="{i18n:Translate Spanish}"
                     TextColor="Black"/>
             
                 <Label
@@ -52,7 +53,7 @@
                     Grid.Column="0"
                     Grid.Row="2"
                     FontAttributes="Bold"
-                    Text="French"
+                    Text="{i18n:Translate French}"
                     TextColor="Black"/>
 
                 <Label
@@ -65,7 +66,7 @@
                     Grid.Column="0"
                     Grid.Row="3"
                     FontAttributes="Bold"
-                    Text="Japanese"
+                    Text="{i18n:Translate Japanese}"
                     TextColor="Black"/>
 
                 <Label
@@ -78,7 +79,7 @@
                     Grid.Column="0"
                     Grid.Row="4"
                     FontAttributes="Bold"
-                    Text="Italian"
+                    Text="{i18n:Translate Italian}"
                     TextColor="Black"/>
                 
                 <Label
@@ -91,7 +92,7 @@
                     Grid.Column="0"
                     Grid.Row="5"
                     FontAttributes="Bold"
-                    Text="Brazilian"
+                    Text="{i18n:Translate Brazilian}"
                     TextColor="Black"/>
                 
                 <Label
@@ -104,7 +105,7 @@
                     Grid.Column="0"
                     Grid.Row="6"
                     FontAttributes="Bold"
-                    Text="Portuguese"
+                    Text="{i18n:Translate Portuguese}"
                     TextColor="Black"/>
                 
                 <Label
@@ -117,7 +118,7 @@
                     Grid.Column="0"
                     Grid.Row="7"
                     FontAttributes="Bold"
-                    Text="Dutch"
+                    Text="{i18n:Translate Dutch}"
                     TextColor="Black"/>
 
                 <Label
@@ -130,7 +131,7 @@
                     Grid.Column="0"
                     Grid.Row="8"
                     FontAttributes="Bold"
-                    Text="Croatian"
+                    Text="{i18n:Translate Croatian}"
                     TextColor="Black"/>
 
                 <Label
@@ -143,7 +144,7 @@
                     Grid.Column="0"
                     Grid.Row="9"
                     FontAttributes="Bold"
-                    Text="Persian"
+                    Text="{i18n:Translate Persian}"
                     TextColor="Black"/>
             
                 <Label
