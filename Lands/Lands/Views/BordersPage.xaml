@@ -3,21 +3,60 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Lands.Views.BordersPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Icon="ic_action_border"
-    Title="Borders">
-
-    <StackLayout BindingContext="{Binding Land}"
-        Padding="30,30,0,0">
-
-        <Label FontSize="Large"
+    xmlns:i18n="clr-namespace:Lands.Helpers"         
+    Icon="ic_action_language"
+    Title="International">
+    
+    <ScrollView>
+      <StackLayout BindingContext="{Binding Land}"
+        Padding="30,0,0,0">
+¡
+      <StackLayout>
+         <Label FontSize="Large"
             FontAttributes="Bold"
-            Text="{Binding Land.Name}"
+            Text="{i18n:Translate Borders}"
             TextColor="Black" />
 
-        <ListView BackgroundColor="Transparent"
+          <ListView x:Name="MyList" 
+            BackgroundColor="Yellow"
             ItemsSource="{Binding Borders}"
             HasUnevenRows="true"
-            Margin="0,20,0,0"
+            Margin="0,0,0,0"
+            SeparatorVisibility="None">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="3*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="{Binding Code}"
+                                TextColor="Black">
+                                    </Label>
+
+                                    <Label Grid.Column="1" 
+                                Text="{Binding Name}"
+                                TextColor="Black">
+                                    </Label>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+
+            <StackLayout>
+            <ListView ItemsSource="{Binding Languages}"
+            HasUnevenRows="true"
+            Margin="0,5,0,0"
             SeparatorVisibility="None">
 
             <ListView.ItemTemplate>
@@ -26,14 +65,15 @@
                         <Grid>
 
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".5*" />
                                 <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="3*" />
+                                <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
                             <Label Grid.Column="0"
                                 FontAttributes="Bold"
                                 FontSize="Medium"
-                                Text="{Binding Code}"
+                                Text="{Binding Iso6392}"
                                 TextColor="Black">
                             </Label>
 
@@ -41,10 +81,166 @@
                                 Text="{Binding Name}"
                                 TextColor="Black">
                             </Label>
+
+                            <Label Grid.Column="2" 
+                                Text="{Binding NativeName}"
+                                TextColor="Black">
+                            </Label>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout Margin="0,20,0,0">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Start"
+                Text="{i18n:Translate Translations}"
+                TextColor="Black"/>
+
+        <Grid Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate German}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Text="{Binding Land.Translations.Germany}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Spanish}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Text="{Binding Land.Translations.Spanish}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate French}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Text="{Binding Land.Translations.French}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Japanese}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    Text="{Binding Land.Translations.Japanese}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Italian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    Text="{Binding Land.Translations.Italian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Brazilian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    Text="{Binding Land.Translations.Brazilian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="6"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Portuguese}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    Text="{Binding Land.Translations.Portuges}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="7"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Dutch}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    Text="{Binding Land.Translations.Dutch}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="8"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Croatian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="8"
+                    Text="{Binding Land.Translations.Croatian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="0"
+                    Grid.Row="9"
+                    FontAttributes="Bold"
+                    Text="{i18n:Translate Persian}"
+                    TextColor="Black"/>
+
+            <Label
+                    Grid.Column="1"
+                    Grid.Row="9"
+                    Text="{Binding Land.Translations.Persian}"
+                    TextColor="Black"/>
+        </Grid>
+
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
 </ContentPage>
