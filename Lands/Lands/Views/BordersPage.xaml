@@ -6,20 +6,22 @@
              xmlns:i18n="clr-namespace:Lands.Helpers"
              Icon="ic_action_border"
              Title="Global">
-
+    
     <ScrollView>
 
+
         <Grid BindingContext="{Binding Land}"
-              Padding="30,0,0,0">
+              Padding="30,0,0,0" RowSpacing="0">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height=".5*" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
-            <StackLayout Grid.Row="0"
-                         HeightRequest="70">
+
+
+            <StackLayout BackgroundColor="Yellow" HeightRequest="50" VerticalOptions="Start">
 
                 <Label FontSize="Large"
                        FontAttributes="Bold"
@@ -63,8 +65,7 @@
                 </ListView>
             </StackLayout>
 
-            <StackLayout Grid.Row="1"
-                         HeightRequest="50">
+            <StackLayout >
 
                 <Label FontSize="Large"
                        FontAttributes="Bold"
@@ -111,9 +112,7 @@
                 </ListView>
             </StackLayout>
 
-            <StackLayout Margin="0,10,0,0"
-                         Grid.Row="2"
-                         HeightRequest="100">
+            <StackLayout Margin="0,10,0,0">
 
                 <Label FontAttributes="Bold"
                        FontSize="Large"
@@ -240,6 +239,8 @@
 
                 </Grid>
             </StackLayout>
-        </Grid>
+
+    </Grid>
     </ScrollView>
+
 </ContentPage>

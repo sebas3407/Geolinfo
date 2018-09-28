@@ -7,8 +7,9 @@ namespace Lands.Views
 {
     public partial class BordersPage : ContentPage
     {
-        public BordersPage()
+        public BordersPage() 
         {
+            //int a 
             InitializeComponent();
         }
     }
