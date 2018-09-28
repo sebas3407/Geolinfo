@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Lands.Interfaces
 {
-    interface IConfig
+    public interface IConfig
     {
-
-        ISQLitePlatform Platfor { get; set; }
+        string DirectoryDB { get; }
+        ISQLitePlatform Platform { get; }
     }
 }
