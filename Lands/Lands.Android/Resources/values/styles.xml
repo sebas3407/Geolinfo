@@ -28,7 +28,7 @@
     <item name="colorAccent">#FF4081</item>
   </style>
   <style name="Theme.Splash" parent="android:Theme">
-     <item name="android:windowBackground">@drawable/onu</item>
+     <item name="android:windowBackground">@drawable/splashImage</item>
      <item name="android:windowNoTitle">true</item>
   </style>   
 </resources>
