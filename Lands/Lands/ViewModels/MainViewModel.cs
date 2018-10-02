@@ -47,7 +47,14 @@ namespace Lands.ViewModels
 
         private void LoadMenu()
         {
-            throw new NotImplementedException();
+            Menus = new ObservableCollection<MenuItemViewModel>();
+
+            Menus.Add(new MenuItemViewModel
+            {
+                Icon = "ic_email.png",
+                Tittle = "Contacto",
+                PageName = ""
+            });
         }
         #endregion
 
