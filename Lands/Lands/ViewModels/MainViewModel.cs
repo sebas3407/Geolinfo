@@ -53,7 +53,14 @@ namespace Lands.ViewModels
             {
                 Icon = "ic_email.png",
                 Tittle = "Contacto",
-                PageName = ""
+                PageName = "LandTabbedPage"
+            });
+
+            Menus.Add(new MenuItemViewModel
+            {
+                Icon = "ic_email.png",
+                Tittle = "Contacto",
+                PageName = "LandTabbedPage"
             });
         }
         #endregion
