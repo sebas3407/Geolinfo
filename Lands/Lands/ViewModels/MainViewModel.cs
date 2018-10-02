@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Lands.Models;
 
 namespace Lands.ViewModels
@@ -11,6 +13,8 @@ namespace Lands.ViewModels
             get;
             set;
         }
+
+        public ObservableCollection<MenuItemViewModel> Menus { get; set; }
         #endregion
 
         #region ViewModels
@@ -38,7 +42,17 @@ namespace Lands.ViewModels
         {
             instance = this;
             this.Lands = new LandsViewModel();
+            LoadMenu();
         }
+
+        private void LoadMenu()
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+
+        #region Methods
+
         #endregion
 
         #region Singleton
