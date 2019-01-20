@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# Geolinfo 
 
-You can use the [editor on GitHub](https://github.com/sebas3407/Geolinfo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Developed with Xamarin Forms for iOS and Android devices**
+Search the basic information of any country instantly.
+With Geolinfo you will be able to know the most important data of any country that you need, find out what is the capital, what languages are spoken in that country, the surface it occupies, discover the number of inhabitants and much more!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### iOS Main page 
+![Geolinfo iOS](https://i.ibb.co/vvCbKJ3/geolinfo-50.png)
 
-### Markdown
+### Android Main page
+![Geolinfo Android](https://i.ibb.co/kgr3VhN/geolinfo-droid.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Country details 
+- Land
+  - Capital
+  - Population
+  - Area
+  - Alpha Code
+  - Region
+  - Subregion
+  - Demonym
+  - GINI
+  - Native Name
+  - Numeric Code
+  - CIOC
+- Global
+  - Translations
+  - Borders
+  - Languages
+- Currencies
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sebas3407/Geolinfo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
