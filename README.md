@@ -29,3 +29,6 @@ With Geolinfo you will be able to know the most important data of any country th
   - Languages
 - Currencies
 
+### Credits
+
+- **Developer**: Sebastian Ortiz Velez http://sebastianortiz.tk
