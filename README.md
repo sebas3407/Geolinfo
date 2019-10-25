@@ -31,4 +31,5 @@ With Geolinfo you will be able to know the most important data of any country th
 
 ### Credits
 
-- **Sebastian Ortiz Velez** - *Developer* http://sebastianortiz.tk
+- **Sebastian Ortiz Velez** - *Developer*
+- **Juan Carlos Zuluaga** - *Original idea*
